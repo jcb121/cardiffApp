@@ -1,0 +1,27 @@
+{
+  "name": "cardiffApp",
+  "authors": [
+    "jcb121 <jcb.121@hotmail.co.uk>"
+  ],
+  "description": "Personal website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "parallax.js": "^1.4.2"
+},
+"overrides":{
+	"bootstrap":{
+		"main":["dist/js/bootstrap.js", "dist/css/bootstrap.css"]
+	}
+}
+}
