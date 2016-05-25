@@ -16,34 +16,39 @@ $breakpoints:(xs:600px, sm:960px, md:1280px, lg:1920px);
 		  max-width:100%;
 		}
 	}
+	>.flex{
+		min-height: 0;
+	}
 	>.flex-33{
-		flex-basis: 0%;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex:1;
 		max-width:100%;
 	}
 	>.flex-66{
-		flex-basis: 0%;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex:1;
 		max-width:100%;
 	}
 
 }
 .flex{
-	flex-basis:100%;
+	//flex-basis:100%;
 	flex-grow: 1;
 	flex-shrink: 1;
 }
-@for $i from 1 to 20{
-	$val:$i * 5;
-	.flex-#{$val}{
-	  flex-basis:#{percentage($val/100)};
-	  flex-grow: 1;
-	  flex-shrink: 1;
-	  max-width:#{percentage($val/100)};
-	}
-}
+//@for $i from 1 to 20{
+//	$val:$i * 5;
+//	.flex-#{$val}{
+//	  flex: 1 1 #{percentage($val/100)};
+//	  max-width:#{percentage($val/100)};
+//	}
+//}
+//.flex-33{
+//	flex: 1 1 33.33%;
+//	max-width:33.44%;
+//}
+//.flex-66{
+//	flex: 1 1 66.66%;
+//    max-width:66.66%;
+//}
 
 
 
@@ -84,18 +89,7 @@ $breakpoints:(xs:600px, sm:960px, md:1280px, lg:1920px);
 	justify-content: space-around;
 }
 
-.flex-33{
-  flex-basis:33%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width:33%;
-}
-.flex-66{
-  flex-basis:66%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width:66%;
-}
+
 
 .layout-padding{
 	&.edge{
