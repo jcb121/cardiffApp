@@ -68,7 +68,8 @@ gulp.task('html', function(){
 
 gulp.task('connect', function() {
   connect.server({
-		root: './dist/'
+		root: './dist/',
+    port:8081
   });
 });
 
